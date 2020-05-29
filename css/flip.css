@@ -1,0 +1,32 @@
+﻿@charset "utf-8";.flip-container{-webkit-perspective:1000;-moz-perspective:1000;-ms-perspective:1000;perspective:1000;-ms-transform:perspective(1000px);-moz-transform:perspective(1000px);-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d;margin:15px 0;}
+.flip-container:hover .back, .flip-container.hover .back{-webkit-transform:rotateY(0deg);-moz-transform:rotateY(0deg);-o-transform:rotateY(0deg);-ms-transform:rotateY(0deg);transform:rotateY(0deg);}
+.flip-container:hover .front, .flip-container.hover .front{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);-o-transform:rotateY(180deg);transform:rotateY(180deg);}
+.front, .back{background:#dff1f4 !important;position:relative;}
+.front img.IMG_Doctor{width:100%;}
+.front .Drname, .back .Drname{font-weight:500;font-size:16px;display:block;padding:10px 10px 0px 10px;text-align:center;}
+.front .DrDesignation, .back .DrDesignation{font-size:14px;text-align:center;display:block;padding:0px 10px 0px 10px;}
+.front .DrDept, .back .DrDept{font-size:14px;font-weight:500;text-align:center;display:block;color:#126370;padding:0px 10px 0px 10px;}
+.front .DrQalification, .back .DrQalification{font-size:13px;font-weight:400;text-align:center;display:block;color:#333333;padding:0px 10px 0px 10px;line-height:17px;}
+.BottomBgCtr{display:table;width:100%;position:absolute;bottom:0px;}
+.BottomBgCtr div{display:table-cell;height:10px;background:#b7d2d6;}
+.BottomBgCtr div:first-child{width:30%;background:#156f7e;}
+.flip-container, .front, .back{width:100%;height:460px;}
+.flipper{-webkit-transition:0.6s;-webkit-transform-style:preserve-3d;-ms-transition:0.6s;-moz-transition:0.6s;-moz-transform:perspective(1000px);-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transition:0.6s;transform-style:preserve-3d;position:relative;}
+.front, .back{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:0.6s;-webkit-transform-style:preserve-3d;-webkit-transform:rotateY(0deg);-moz-transition:0.6s;-moz-transform-style:preserve-3d;-moz-transform:rotateY(0deg);-o-transition:0.6s;-o-transform-style:preserve-3d;-o-transform:rotateY(0deg);-ms-transition:0.6s;-ms-transform-style:preserve-3d;-ms-transform:rotateY(0deg);transition:0.6s;transform-style:preserve-3d;transform:rotateY(0deg);position:absolute;top:0;left:0;}
+.front{-webkit-transform:rotateY(0deg);-ms-transform:rotateY(0deg);z-index:2;}
+.back{-webkit-transform:rotateY(-180deg);-moz-transform:rotateY(-180deg);-o-transform:rotateY(-180deg);-ms-transform:rotateY(-180deg);transform:rotateY(-180deg);border-top:4px solid #156f7e;position:relative;}
+.back .ProfEditDeleteBtnContainer{width:100px;position:absolute;top:0px;right:0px;text-align:right;}
+.back .ProfEditDeleteBtnContainer a i{font-size:16px;}
+.back .ProfEditDeleteBtnContainer a{background:#156f7e;color:#fff;padding:6px;width:30px;height:30px;line-height:30px;}
+.back .BtnContainerDr{text-align:center;padding:10px 20px 0px;}
+.back .BtnContainerDr a{margin:10px 0px;width:100%;line-height:20px;padding:6px 25px;}
+.back-logo{margin:30px auto 0px;width:120px;height:120px;border-radius:100%;background:url(logo.html) 0 0 no-repeat;border:4px solid #FFF;}
+.back-logo img{border-radius:100%;width:100%;height:100%;}
+.back p{position:absolute;bottom:40px;left:0;right:0;text-align:center;padding:0 20px;font-size:18px;}
+.vertical.flip-container{position:relative;}
+.vertical .back{-webkit-transform:rotateX(180deg);-moz-transform:rotateX(180deg);-ms-transform:rotateX(180deg);transform:rotateX(180deg);}
+.vertical.flip-container .flipper{-webkit-transform-origin:100% 213.5px;-moz-transform-origin:100% 213.5px;-ms-transform-origin:100% 213.5px;transform-origin:100% 213.5px;}
+.vertical.flip-container:hover .back,
+.vertical.flip-container.hover .back{-webkit-transform:rotateX(0deg);-moz-transform:rotateX(0deg);-o-transform:rotateX(0deg);-ms-transform:rotateX(0deg);transform:rotateX(0deg);}
+.vertical.flip-container:hover .front,
+.vertical.flip-container.hover .front{-webkit-transform:rotateX(180deg);-moz-transform:rotateX(180deg);-o-transform:rotateX(180deg);transform:rotateX(180deg);}
